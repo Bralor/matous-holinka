@@ -1,6 +1,7 @@
 import './App.css';
 import './components/myStyles.css';
 import React from 'react';
+import logo from "./matous_nepal.jpg";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -29,11 +30,22 @@ return (
             </div>
 
             <div className="intro-wrapper">
+
               <div className="nav-wrapper">
                 <p>Nav</p>
               </div>
+
               <div className="left-column">
-                Left Column
+                <img src={logo} className="profile-picture" />
+                <h5 className="header-5">Personalize theme</h5>
+
+                <div className="theme-option-wrapper">
+                  <div className="theme-dot" id="light-mode"></div>
+                  <div className="theme-dot" id="dark-mode"></div>
+                </div>
+
+                <p id="settings-note">*Theme setting will be saved for your next visit</p>
+
               </div>
               <div className="right-column">
                 Right Column
